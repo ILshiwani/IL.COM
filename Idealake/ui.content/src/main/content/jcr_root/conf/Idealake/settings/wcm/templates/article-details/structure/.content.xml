@@ -5,7 +5,7 @@
         cq:deviceGroups="[mobile/groups/responsive]"
         cq:lastModified="{Date}2024-02-07T00:45:21.614+05:30"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/Idealake/settings/wcm/templates/solution-details"
+        cq:template="/conf/Idealake/settings/wcm/templates/article-details"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="Idealake/components/basepage">
         <root

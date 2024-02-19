@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2024-02-17T01:07:38.029+05:30"
+        cq:lastModified="{Date}2024-02-07T00:45:21.614+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/Idealake/settings/wcm/templates/solution"
         jcr:primaryType="cq:PageContent"

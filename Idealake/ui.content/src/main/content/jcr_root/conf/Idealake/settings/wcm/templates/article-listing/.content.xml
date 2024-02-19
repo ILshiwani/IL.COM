@@ -6,6 +6,6 @@
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/Idealake/settings/wcm/template-types/basepage"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Solution"
+        jcr:title="Article-Listing"
         status="enabled"/>
 </jcr:root>
