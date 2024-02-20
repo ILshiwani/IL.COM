@@ -34,9 +34,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -339,6 +339,28 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <basepage jcr:primaryType="nt:unstructured">
+                <policy_1708070216176
+                    jcr:lastModified="{Date}2024-02-20T13:06:09.907+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Base Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[Idealake.Global,Idealake.Services]"
+                    clientlibsAsync="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1708070216176>
+                <policy_1708285420453
+                    jcr:lastModified="{Date}2024-02-19T01:14:13.849+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Solution Details Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="Idealake.Global"
+                    clientlibsAsync="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1708285420453>
+            </basepage>
         </components>
     </Idealake>
 </jcr:root>
