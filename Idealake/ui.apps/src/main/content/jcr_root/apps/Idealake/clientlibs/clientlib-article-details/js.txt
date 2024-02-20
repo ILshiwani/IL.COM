@@ -1,0 +1,7 @@
+#base=js
+jquery.min.js
+aos.js
+fcp.js
+global.js
+
+
