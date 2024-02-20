@@ -339,6 +339,20 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <basepage jcr:primaryType="nt:unstructured">
+                <policy_1708073175652
+                        jcr:description="Page Policies for contact us pages."
+                        jcr:lastModified="{Date}2024-02-16T15:00:09.003+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Contact Us"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[Idealake.Global,Idealake.ContactUs]"
+                        clientlibsAsync="false"
+                        clientlibsJsHead="Idealake.dependencies">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1708073175652>
+            </basepage>
         </components>
     </Idealake>
 </jcr:root>
