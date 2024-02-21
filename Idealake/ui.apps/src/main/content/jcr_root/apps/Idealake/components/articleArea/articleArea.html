@@ -1,0 +1,54 @@
+
+<sly  data-sly-use.articleObj="com.Idealake.core.models.ArticleAreaModel"/>
+
+<div class="pageWrapper">
+    <section class="artical-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="art-wrap">
+                        <sly data-sly-list.articleItem="${articleObj.articleCards.listChildren}">
+                            <div data-aos="fade-up" class="art-list">
+                                <div class="art-img">
+                                    <picture>
+                                        <source srcset="${articleItem.articleImage}" type="image/png"><img
+                                            src="${articleItem.articleImage}"
+                                            data-src="${articleItem.articleImage}" alt="Toggle Up!"
+                                            class="lazy">
+                                    </picture>
+                                </div>
+                                <div class="art-cont">
+                                    <h3 class="art-title">${articleItem.articleHeading}</h3>
+                                    <p class="art-para">${articleItem.articleDescription}</p><a href="${articleItem.readMoreLink}" target="_blank"
+                                                                    class="btn-plain">Read More</a>
+                                </div>
+                            </div>
+                        </sly>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-xl-5 col-md-6 col-sm-12 artiwrap-right">
+                    <div class="art-img">
+                        <picture>
+                            <source media="(max-width:767px)" srcset="assets/images/article-mob-4.png"><img
+                                src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-src="${properties.articleImageRight}"
+                                alt=" Why Agile is Not Agile Anymore? " class="lazy">
+                        </picture>
+                    </div>
+                    <div class="art-list">
+                        <div class="art-cont">
+                            <h3 class="art-title">${properties.articleHeadingRight}</h3>
+                            <p class="art-para">${properties.articleDescriptionRight}</p><a
+                                href="${properties.readMoreLinkRight}" target="_blank"
+                                class="btn-plain">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnWrap"><a href="${properties.ctaLink}" class="btn btn-outline">${properties.ctaText}</a></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
