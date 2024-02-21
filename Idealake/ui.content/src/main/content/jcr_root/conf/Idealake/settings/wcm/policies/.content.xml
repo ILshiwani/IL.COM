@@ -346,7 +346,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Base Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[Idealake.Global,Idealake.Services]"
+                        clientlibs="[Idealake.Global,Idealake.services]"
                         clientlibsAsync="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1708070216176>
@@ -356,7 +356,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Solution Details Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="Idealake.Global"
+                        clientlibs="Idealake.Global,Idealake.-service-details"
                         clientlibsAsync="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1708285420453>
