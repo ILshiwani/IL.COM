@@ -1,0 +1,26 @@
+<sly data-sly-use.images="${'/apps/Idealake/utility/jsonParser.js' @ jsonData=properties.images, jsonInnerData=''}"/>
+
+
+<section class="latest-work">
+	<div class="container">
+		<h2 class="sec-head clr-primary">${properties.title}
+		</h2>
+		<p class="sec-subhead">${properties.subtitle}</p>
+		<sly data-sly-list.text="${images.listJson}">
+			<div class="mac-delivery">
+				<div data-aos="fade-up" class="right-col">
+					<picture>
+						<source srcset="${text.pngImage}" type="image/png">
+						<img src="${text.scriptImage}"
+							 data-src="assets/images/mc-burger.png" alt="mc-d" width="380" height="450"
+							 class="lazy">
+					</picture>
+				</div>
+				<div data-aos="fade-up" class="left-col">
+					<h4 class="col-head">${text.heading} </h4>
+					<p class="img-desc">${text.para} </p>
+				</div>
+			</div>
+		</sly>
+	</div>
+</section>
