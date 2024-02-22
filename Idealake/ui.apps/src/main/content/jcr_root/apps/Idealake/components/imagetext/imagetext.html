@@ -7,20 +7,55 @@
 		</h2>
 		<p class="sec-subhead">${properties.subtitle}</p>
 		<sly data-sly-list.text="${images.listJson}">
-			<div class="mac-delivery">
-				<div data-aos="fade-up" class="right-col">
-					<picture>
-						<source srcset="${text.pngImage}" type="image/png">
-						<img src="${text.scriptImage}"
-							 data-src="assets/images/mc-burger.png" alt="mc-d" width="380" height="450"
-							 class="lazy">
-					</picture>
+			<sly data-sly-test="${textList.index == 0}">
+				<div class="mac-delivery">
+					<div data-aos="fade-up" class="right-col aos-init aos-animate">
+						<picture>
+							<source srcset="${text.pngImage}" type="image/png">
+							<img src="${text.scriptImage}"
+								 data-src="assets/images/mc-burger.png" alt="mc-d" width="380" height="450"
+								 class="lazy">
+						</picture>
+					</div>
+					<div data-aos="fade-up" class="left-col aos-init aos-animate">
+						<h4 class="col-head">${text.heading} </h4>
+						<p class="img-desc">${text.para} </p>
+					</div>
 				</div>
-				<div data-aos="fade-up" class="left-col">
-					<h4 class="col-head">${text.heading} </h4>
-					<p class="img-desc">${text.para} </p>
+			</sly>
+			<sly data-sly-test="${textList.index == 1}">
+				<div class="mac-delivery-1">
+					<div data-aos="fade-up" class="right-col aos-init aos-animate">
+						<picture>
+							<source srcset="${text.pngImage}" type="image/png">
+							<img src="${text.scriptImage}"
+								 data-src="assets/images/mc-burger.png" alt="mc-d" width="380" height="450"
+								 class="lazy">
+						</picture>
+					</div>
+					<div data-aos="fade-up" class="left-col aos-init aos-animate">
+						<h4 class="col-head">${text.heading} </h4>
+						<p class="img-desc">${text.para} </p>
+					</div>
 				</div>
-			</div>
-		</sly>
+			</sly>
+			<sly data-sly-test="${textList.index == 2}">
+				<div class="mac-delivery">
+					<div data-aos="fade-up" class="right-col aos-init aos-animate">
+						<picture>
+							<source srcset="${text.pngImage}" type="image/png">
+							<img src="${text.scriptImage}"
+								 data-src="assets/images/mc-burger.png" alt="mc-d" width="380" height="450"
+								 class="lazy">
+						</picture>
+					</div>
+					<div data-aos="fade-up" class="left-col aos-init aos-animate">
+						<h4 class="col-head">${text.heading} </h4>
+						<p class="img-desc">${text.para} </p>
+					</div>
+				</div>
+			</sly>
+	</div>
+	</sly>
 	</div>
 </section>
