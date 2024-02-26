@@ -1,31 +1,43 @@
-<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
-    <sly data-sly-call="${templates.placeholder @ isEmpty = !text, classAppend='cmp-text'}"></sly>
-</sly>
+<sly data-sly-use.section="${'/apps/Idealake/utility/jsonParser.js' @ jsonData=properties.section, jsonInnerData=''}"/>
 
-<sly  data-sly-use.headerObj="com.Idealake.core.models.HeaderModel"/>
+<section id="team_section">
+	<div class="container">
+		<div data-aos="fade-up" class="fundmembersHead">
+			<h2 class="sec-head">${properties.title}</h2>
+			<p class="sec-subhead">${properties.subtitle}</p>
+		</div>
+		<div data-aos="fade-up" class="memberCard">
+			<div id="meetourteam" class="swiper">
+				<div class="swiper-wrapper">
+					<sly data-sly-list.product="${section.listJson}">
+						<div class="swiper-slide">
+							<div class="card">
+								<div class="cardImg">
+									<picture>
+										<source srcset="${product.imagePath}" type="image/png">
+										<img src="${product.scriptImage}"
+											 data-src="assets/images/viraj-sawant.png" alt="Viraj Savant"
+											 class="lazy">
+									</picture>
+								</div>
+								<div class="cardinfo">
+									<h3 class="cardTitle">${product.name}</h3>
+									<p class="cardDisc">${product.post}</p>
+									<div class="socialIcons">
+										<ul>
+											<li><a href="${product.link}"
+												   target="_blank"><span
+													class="icon-linked-in2"></span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</sly>
 
-<header class="">
-    <nav class="navbar">
-        <div class="container">
-            <section class="wrapper"><a href="/" title="Idealake-logo" class="brand">
-                <picture>
-                    <source srcset="${headerObj.logo}" type="image/png"><img src="${headerObj.logo}" alt="Idelake" title="Idealake" width="190" height="63">
-                </picture>
-            </a>
-                <button type="button" id="burger" class="burger"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></button>
-                <div id="menu" class="menu">
-                    <ul class="menu-inner">
-                        <li data-sly-repeat.nav="${headerObj.navbar}"class="menu-item">
-                            <a href="${nav.navBarLink}" class="menu-link">${nav.navBarName}</a>
-                        </li>
-
-                    </ul>
-                </div><a href="${headerObj.ctaLink}" title="${headerObj.ctaText}" class="cont-btn">${headerObj.ctaText}</a>
-            </section>
-        </div>
-    </nav>
-</header>
-
-
-
-
+				</div>
+			</div>
+		</div>
+		<div class="leadersBtn"><a href="our-team.html" class="btn btn-outline">${properties.button}</a></div>
+	</div>
+</section>
