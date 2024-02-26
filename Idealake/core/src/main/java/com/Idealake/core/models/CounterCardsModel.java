@@ -22,7 +22,7 @@ import org.apache.sling.models.annotations.Optional;
 import javax.inject.Inject;
 
 @Model(adaptables=Resource.class)
-public class OurOfferingsModel {
+public class CounterCardsModel {
 
     @Inject
     @Optional
