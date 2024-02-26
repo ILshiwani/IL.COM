@@ -1,0 +1,33 @@
+
+<sly data-sly-use.clientlibs="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-call="${clientlibs.all @ categories='Idealake.components. counterCards'}"/>
+<pre data-sly-use.product="com.Idealake.core.models.CounterCardsModel"/>
+<section id="ideasAchieve">
+	<div class="sec-wrap">
+		<picture class="secBg ideaBg">
+			<source media="(max-width:465px)" type="image/webp"
+					srcset="${properties.imgSrc}"><img
+				src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+				data-src="${properties.imgPath}" alt="ideas" class="lazy">
+		</picture>
+		<div class="container">
+			<div class="head">
+				<p class="headDesc">${properties.mainHeading}</p>
+				<div class="knowMorebtn"> <a href="javascript:void(0);" data-aos="zoom-out-up"
+											 data-aos-offset="100" data-aos-easing="ease-in-sine"
+											 class="btn btn_primary">${properties.knowmore}</a>
+				</div>
+			</div>
+			<div class="column">
+				<sly data-sly-list.statsItem="${product.products.listChildren}">
+				<div class="cards">
+					<p aria-label="200" class="counter">${statsItem.num}<span>+</span></p>
+					<h4 class="counterTitle">${statsItem.title} </h4>
+					<p class="counterDesc">${statsItem.desc}</p>
+				</div>
+
+				</sly>
+			</div>
+		</div>
+	</div>
+</section>
