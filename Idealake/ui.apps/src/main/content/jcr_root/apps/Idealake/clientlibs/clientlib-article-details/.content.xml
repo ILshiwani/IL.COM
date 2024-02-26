@@ -3,4 +3,4 @@
     jcr:primaryType="cq:ClientLibraryFolder"
     allowProxy="{Boolean}true"
     categories="[Idealake.Global]"
-dependencies="[Idealake.Article-Listing]"/>
+dependencies="[Idealake.Article-Details]"/>

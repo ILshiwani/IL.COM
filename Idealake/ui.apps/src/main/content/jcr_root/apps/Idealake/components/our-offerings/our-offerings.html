@@ -2,48 +2,29 @@
     <sly data-sly-call="${templates.placeholder @ isEmpty = !text, classAppend='cmp-text'}"></sly>
 </sly>
 
+<sly  data-sly-use.product="com.Idealake.core.models.OurOfferings"/>
 
 <section class="our-offering">
     <div class="container">
         <div data-aos="fade-up" class="title-wrapper">
-            <h2 class="sec-head">The full stack</h2>
-            <p class="sec-subhead">From UX design to code development to hosting, <br>Idealake is the
-                place for any tech solution.</p>
+            <h2 class="sec-head">${properties.heading}</h2>
+            <p class="sec-subhead">${properties.subHeading1} <br>${properties.subHeading2}
+                </p>
         </div>
         <div class="full-stack-wrapper">
+            <sly data-sly-list.statsItem="${product.products.listChildren}">
             <div data-aos="fade-up" class="we-design">
-                <div class="head">we DESIGN</div>
+                <div class="head">${statsItem.heading}</div>
                 <div class="img-wrapper">
                     <picture>
-                        <source srcset="/content/dam/Idealake/idealake/we_design.webp" type="image/png"><img
-                            src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                            data-src="assets/images/we_design.png" alt="we_design" width="268"
+                        <source srcset="${statsItem.imgpath}" type="image/png"><img
+                            src="${statsItem.imgPath}"
+                            data-src="${statsItem.imgSource}"alt="we_design" width="268"
                             height="504" class="lazy">
                     </picture>
                 </div>
             </div>
-            <div data-aos="fade-up" class="we-develop">
-                <div class="head">we Develop</div>
-                <div class="img-wrapper center-img">
-                    <picture>
-                        <source srcset="/content/dam/Idealake/idealake/we_develop.webp" type="image/png"><img
-                            src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                            data-src="assets/images/we_develop.png" alt="we_develop" width="417"
-                            height="504" class="lazy">
-                    </picture>
-                </div>
-            </div>
-            <div data-aos="fade-up" class="we-Deliver">
-                <div class="head">we Deliver</div>
-                <div class="img-wrapper">
-                    <picture>
-                        <source srcset="/content/dam/Idealake/idealake/we_deliver.webp" type="image/png"><img
-                            src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                            data-src="assets/images/we_deliver.png" alt="we_deliver" width="268"
-                            height="504" class="lazy">
-                    </picture>
-                </div>
-            </div>
+            </sly>
         </div>
     </div>
 </section>

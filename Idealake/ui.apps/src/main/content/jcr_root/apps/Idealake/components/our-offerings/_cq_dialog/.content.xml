@@ -11,51 +11,69 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <logo
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                        fieldLabel="Logo"
-                        name="./logo"/>
-                    <navbar
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Heading Text"
+                            name="./heading"/>
+                    <subHeading1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Heading Text"
+                            name="./subHeading1"/>
+                    <subHeading2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Heading Text"
+                            name="./subHeading2"/>
+                    <products
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-                            composite="{Boolean}true">
+                            composite="{Boolean}true"
+                            fieldLabel="Products">
                         <field
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container"
-                                name="./navbar">
+                                name="./products">
                             <items jcr:primaryType="nt:unstructured">
-                                <navBarItem
+                                <column
                                         jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
                                     <items jcr:primaryType="nt:unstructured">
-                                        <navBarName
+                                        <heading
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Nav Bar Name"
-                                                name="./navBarName"/>
-                                        <navBarLink
+                                                fieldLabel="Text"
+                                                name="./heading"/>
+
+                                        <imgPath
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Nav BarLink"
-                                                name="./navBarLink"/>
+                                                fieldDescription="Select Path"
+                                                fieldLabel="Image Path"
+                                                name="./imgPath"
+                                                rootPath="/content/dam"/>
+                                        <imgSource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Select Path"
+                                                fieldLabel="Image Source"
+                                                name="./imgSource"
+                                                rootPath="/content/dam"/>
+                                        <imgpath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Select Path"
+                                                fieldLabel="Image path"
+                                                name="./imgpath"
+                                                rootPath="/content/dam"/>
+
                                     </items>
-                                </navBarItem>
+                                </column>
                             </items>
                         </field>
-                    </navbar>
-                    <ctaText
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="CTA Text"
-                            name="./ctaText"/>
-                    <ctaLink
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                            fieldLabel="CTA Link"
-                            name="./ctaLink"/>
+                    </products>
                 </items>
-
             </column>
         </items>
     </content>
