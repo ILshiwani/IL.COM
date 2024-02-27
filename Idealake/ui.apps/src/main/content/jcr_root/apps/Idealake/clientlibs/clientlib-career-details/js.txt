@@ -1,0 +1,7 @@
+#base=js
+aos.js
+fcp.js
+global.js
+jquery.min.js
+swiper.js
+uploadresume.js
