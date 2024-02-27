@@ -1,15 +1,15 @@
-<sly data-sly-use.product="com.Idealake.core.models.NumberCardsModel"/>
+<sly data-sly-use.image="com.Idealake.core.models.NumberCardsModel"/>
 
 <section class="our-numbers">
 	<div class="container">
 		<div class="cont-wrap">
-			<h2 class="section-title">${product.title}</h2>
+			<h2 class="section-title">${properties.title}</h2>
 			<h3 class="sect-sub-title">${properties.subtitle}
 			</h3>
 		</div>
 		<ul class="num-card-wrap">
 
-			<sly data-sly-list.numbers="${product.numbercards.listChildren}">
+			<sly data-sly-list.numbers="${image.cards.listChildren}">
 				<li class="counter-item">
 					<div class="cont-text">
 						<h5><span aria-label="200" class="counter">${numbers.counternumber}<span>${numbers.symbol}</span></span></h5>

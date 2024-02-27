@@ -15,16 +15,12 @@ public class NumberCardsModel {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(NumberCardsModel.class);
 
-    @Inject
-    @Optional
-    private String title;
+
 
     @Inject
     @Optional
-    public Resource numbercards;
+    public Resource cards;
 
-    public String getTitle() {
-        return title;
-    }
+
 
 }
