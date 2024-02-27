@@ -1,0 +1,22 @@
+<sly data-sly-use.product="com.Idealake.core.models.NumberCardsModel"/>
+
+<section class="our-numbers">
+	<div class="container">
+		<div class="cont-wrap">
+			<h2 class="section-title">${product.title}</h2>
+			<h3 class="sect-sub-title">${properties.subtitle}
+			</h3>
+		</div>
+		<ul class="num-card-wrap">
+
+			<sly data-sly-list.numbers="${product.numbercards.listChildren}">
+				<li class="counter-item">
+					<div class="cont-text">
+						<h5><span aria-label="200" class="counter">${numbers.counternumber}<span>${numbers.symbol}</span></span></h5>
+						<h6>${numbers.heading}</h6>
+					</div>
+				</li>
+			</sly>
+		</ul>
+	</div>
+</section>

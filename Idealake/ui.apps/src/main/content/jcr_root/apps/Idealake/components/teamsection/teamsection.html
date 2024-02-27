@@ -1,4 +1,4 @@
-<sly data-sly-use.section="${'/apps/Idealake/utility/jsonParser.js' @ jsonData=properties.section, jsonInnerData=''}"/>
+<sly data-sly-use.product="com.Idealake.core.models.TeamSectionModel"/>
 
 <section id="team_section">
 	<div class="container">
@@ -9,7 +9,7 @@
 		<div data-aos="fade-up" class="memberCard">
 			<div id="meetourteam" class="swiper">
 				<div class="swiper-wrapper">
-					<sly data-sly-list.product="${section.listJson}">
+					<sly data-sly-list.product="${product.section.listChildren}">
 						<div class="swiper-slide">
 							<div class="card">
 								<div class="cardImg">
