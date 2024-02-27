@@ -1,0 +1,27 @@
+
+<sly data-sly-use.clientlibs="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-call="${clientlibs.all @ categories='Idealake.components. ourOfferings'}"/>
+<pre data-sly-use.product="com.Idealake.core.models.OurOfferingsModel"/>
+<section class="our-offering">
+	<div class="container">
+		<div data-aos="fade-up" class="title-wrapper">
+			<h2 class="sec-head">${properties.heading}</h2>
+			<p class="sec-subhead">${properties.subHeading} </p>
+		</div>
+		<div class="full-stack-wrapper">
+			<sly data-sly-list.statsItem="${product.products.listChildren}">
+			<div data-aos="fade-up" class="we-design">
+				<div class="head">${statsItem.paraHeading}</div>
+				<div class="img-wrapper">
+					<picture>
+						<source srcset="${statsItem.imgSrc}" type="image/png"><img
+							src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+							data-src="${statsItem.imgPath}" alt="we_design" width="268"
+							height="504" class="lazy">
+					</picture>
+				</div>
+			</div>
+			</sly>
+		</div>
+	</div>
+</section>

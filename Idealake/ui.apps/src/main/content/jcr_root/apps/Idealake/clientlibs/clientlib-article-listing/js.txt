@@ -1,5 +1,6 @@
 #base=js
 jquery.min.js
+blog-listing.js
 aos.js
 fcp.js
 global.js

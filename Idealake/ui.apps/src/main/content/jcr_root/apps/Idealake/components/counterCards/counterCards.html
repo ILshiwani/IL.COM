@@ -1,31 +1,33 @@
-<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
-    <sly data-sly-call="${templates.placeholder @ isEmpty = !text, classAppend='cmp-text'}"></sly>
-</sly>
 
-<sly  data-sly-use.headerObj="com.Idealake.core.models.HeaderModel"/>
+<sly data-sly-use.clientlibs="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-call="${clientlibs.all @ categories='Idealake.components. counterCards'}"/>
+<pre data-sly-use.product="com.Idealake.core.models.CounterCardsModel"/>
+<section id="ideasAchieve">
+	<div class="sec-wrap">
+		<picture class="secBg ideaBg">
+			<source media="(max-width:465px)" type="image/webp"
+					srcset="${properties.imgSrc}"><img
+				src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+				data-src="${properties.imgPath}" alt="ideas" class="lazy">
+		</picture>
+		<div class="container">
+			<div class="head">
+				<p class="headDesc">${properties.mainHeading}</p>
+				<div class="knowMorebtn"> <a href="javascript:void(0);" data-aos="zoom-out-up"
+											 data-aos-offset="100" data-aos-easing="ease-in-sine"
+											 class="btn btn_primary">${properties.knowmore}</a>
+				</div>
+			</div>
+			<div class="column">
+				<sly data-sly-list.statsItem="${product.products.listChildren}">
+				<div class="cards">
+					<p aria-label="200" class="counter">${statsItem.num}<span>+</span></p>
+					<h4 class="counterTitle">${statsItem.title} </h4>
+					<p class="counterDesc">${statsItem.desc}</p>
+				</div>
 
-<header class="">
-    <nav class="navbar">
-        <div class="container">
-            <section class="wrapper"><a href="/" title="Idealake-logo" class="brand">
-                <picture>
-                    <source srcset="${headerObj.logo}" type="image/png"><img src="${headerObj.logo}" alt="Idelake" title="Idealake" width="190" height="63">
-                </picture>
-            </a>
-                <button type="button" id="burger" class="burger"><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span></button>
-                <div id="menu" class="menu">
-                    <ul class="menu-inner">
-                        <li data-sly-repeat.nav="${headerObj.navbar}"class="menu-item">
-                            <a href="${nav.navBarLink}" class="menu-link">${nav.navBarName}</a>
-                        </li>
-
-                    </ul>
-                </div><a href="${headerObj.ctaLink}" title="${headerObj.ctaText}" class="cont-btn">${headerObj.ctaText}</a>
-            </section>
-        </div>
-    </nav>
-</header>
-
-
-
-
+				</sly>
+			</div>
+		</div>
+	</div>
+</section>
