@@ -376,23 +376,12 @@
                         jcr:lastModified="{Date}2024-02-20T13:06:09.907+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Base Policy"
+                        jcr:title="Homepage"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[Idealake.Global,Idealake.Article-Details]"
+                        clientlibs="[Idealake.homepage]"
                         clientlibsAsync="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_170899559888>
-                <policy_1574694950110
-                        jcr:lastModified="{Date}2024-02-20T13:06:09.907+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Base Policy"
-                        sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[Idealake.Global,Idealake.Article-Listing]"
-                        clientlibsAsync="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_1574694950110>
-
             </basepage>
         </components>
     </Idealake>

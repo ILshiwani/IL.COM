@@ -1,9 +1,2 @@
 #base=js
-jquery.min.js
-aos.js
-fcp.js
-global.js
-cardslider.js
-swiper.js
-mCustomScrollbar.js
-
+home.js
