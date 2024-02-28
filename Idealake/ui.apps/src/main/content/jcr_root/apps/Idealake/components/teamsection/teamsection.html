@@ -1,4 +1,4 @@
-<sly data-sly-use.section="${'/apps/Idealake/utility/jsonParser.js' @ jsonData=properties.section, jsonInnerData=''}"/>
+<sly data-sly-use.ourteams="com.Idealake.core.models.TeamSectionModel"/>
 
 <section id="team_section">
 	<div class="container">
@@ -9,24 +9,24 @@
 		<div data-aos="fade-up" class="memberCard">
 			<div id="meetourteam" class="swiper">
 				<div class="swiper-wrapper">
-					<sly data-sly-list.product="${section.listJson}">
+					<sly data-sly-list.team="${ourteams.section.listChildren}">
 						<div class="swiper-slide">
 							<div class="card">
 								<div class="cardImg">
 									<picture>
-										<source srcset="${product.imagePath}" type="image/png">
-										<img src="${product.scriptImage}"
+										<source srcset="${team.imagePath}" type="image/png">
+										<img src="${team.scriptImage}"
 											 data-src="assets/images/viraj-sawant.png" alt="Viraj Savant"
 											 class="lazy">
 									</picture>
 								</div>
 								<div class="cardinfo">
-									<h3 class="cardTitle">${product.name}</h3>
-									<p class="cardDisc">${product.post}</p>
+									<h3 class="cardTitle">${team.foundername}</h3>
+									<p class="cardDisc">${team.post}</p>
 									<div class="socialIcons">
 										<ul>
 											<li>
-												<a  href="${product.link}"
+												<a  href="${team.link}"
 													target="_blank"><span
 														class="icon-linked-in2"></span>
 												</a>

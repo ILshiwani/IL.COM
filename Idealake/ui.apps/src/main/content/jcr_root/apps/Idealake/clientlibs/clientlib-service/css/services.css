@@ -164,7 +164,7 @@ html{
 .our-numbers{
     margin:5rem 0;
     padding:10rem 19.9rem 14rem 19.9rem;
-    background-image:url(../images/our-numbers-bg.png);
+    background-image:url(/content/dam/Idealake/images/our-numbers-bg.png);
     background-size:100%;
     background-repeat:no-repeat;
     height:auto;
@@ -2903,7 +2903,7 @@ section.brilliance-tog .excitd-wrapper .excited-area .small_circle{
     .our-numbers{
         background-size:cover;
         padding:4.6rem 0 7rem 0;
-        background-image:url(../images/our-numbers-mob-bg.png);
+        background-image:url(/content/dam/Idealake/images/our-numbers-bg.png);
         background-position:top
     }
     .our-numbers .num-card-wrap .counter-item{
