@@ -1,31 +1,31 @@
 @font-face{
     font-family:Mulish-Bold;
-    src:url(../fonts/font/Mulish-Bold.eot);
-    src:url(../fonts/font/Mulish-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/font/Mulish-Bold.woff2) format("woff2"),url(../fonts/font/Mulish-Bold.woff) format("woff"),url(../fonts/font/Mulish-Bold.ttf) format("truetype"),url(../fonts/font/Mulish-Bold.svg#Mulish-Bold) format("svg");
+    src:url(/content/dam/Idealake/fonts/Mulish-Bold.eot);
+    src:url(/content/dam/Idealake/fonts/Mulish-Bold.eot?#iefix) format("embedded-opentype"),url(/content/dam/Idealake/fonts/Mulish-Bold.woff2) format("woff2"),url(/content/dam/Idealake/fonts/Mulish-Bold.woff) format("woff"),url(/content/dam/Idealake/fonts/Mulish-Bold.ttf) format("truetype"),url(/content/dam/Idealake/fonts/Mulish-Bold.svg#Mulish-Bold) format("svg");
     font-weight:700;
     font-style:normal;
     font-display:swap
 }
 @font-face{
     font-family:Mulish-Medium;
-    src:url(../fonts/font/Mulish-Medium.eot);
-    src:url(../fonts/font/Mulish-Medium.eot?#iefix) format("embedded-opentype"),url(../fonts/font/Mulish-Medium.woff2) format("woff2"),url(../fonts/font/Mulish-Medium.woff) format("woff"),url(../fonts/font/Mulish-Medium.ttf) format("truetype"),url(../fonts/font/Mulish-Medium.svg#Mulish-Medium) format("svg");
+    src:url(/content/dam/Idealake/fonts/Mulish-Medium.eot);
+    src:url(/content/dam/Idealake/fonts/Mulish-Medium.eot?#iefix) format("embedded-opentype"),url(/content/dam/Idealake/fonts/Mulish-Medium.woff2) format("woff2"),url(/content/dam/Idealake/fonts/Mulish-Medium.woff) format("woff"),url(/content/dam/Idealake/fonts/Mulish-Medium.ttf) format("truetype"),url(/content/dam/Idealake/fonts/Mulish-Medium.svg#Mulish-Medium) format("svg");
     font-weight:500;
     font-style:normal;
     font-display:swap
 }
 @font-face{
     font-family:Mulish-Regular;
-    src:url(../fonts/font/Mulish-Regular.eot);
-    src:url(../fonts/font/Mulish-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/font/Mulish-Regular.woff2) format("woff2"),url(../fonts/font/Mulish-Regular.woff) format("woff"),url(../fonts/font/Mulish-Regular.ttf) format("truetype"),url(../fonts/font/Mulish-Regular.svg#Mulish-Regular) format("svg");
+    src:url(/content/dam/Idealake/fonts/Mulish-Regular.eot);
+    src:url(/content/dam/Idealake/fonts/Mulish-Regular.eot?#iefix) format("embedded-opentype"),url(/content/dam/Idealake/fonts/Mulish-Regular.woff2) format("woff2"),url(/content/dam/Idealake/fonts/Mulish-Regular.woff) format("woff"),url(/content/dam/Idealake/fonts/Mulish-Regular.ttf) format("truetype"),url(/content/dam/Idealake/fonts/Mulish-Regular.svg#Mulish-Regular) format("svg");
     font-weight:400;
     font-style:normal;
     font-display:swap
 }
 @font-face{
     font-family:icomoon;
-    src:url(../fonts/icomoon.eot?klsznq);
-    src:url(../fonts/icomoon.eot?klsznq#iefix) format("embedded-opentype"),url(../fonts/icomoon.woff2?klsznq) format("woff2"),url(../fonts/icomoon.ttf?klsznq) format("truetype"),url(../fonts/icomoon.woff?klsznq) format("woff"),url(../fonts/icomoon.svg?klsznq#icomoon) format("svg");
+    src:url(/content/dam/Idealake/fonts/icomoon.eot?klsznq);
+    src:url(/content/dam/Idealake/fonts/icomoon.eot?klsznq#iefix) format("embedded-opentype"),url(/content/dam/Idealake/fonts/icomoon.woff2) format("woff2"),url(/content/dam/Idealake/fonts/icomoon.ttf?klsznq) format("truetype"),url(/content/dam/Idealake/fonts/icomoon.woff?klsznq) format("woff"),url(/content/dam/Idealake/fonts/icomoon.svg?klsznq#icomoon) format("svg");
     font-weight:400;
     font-style:normal;
     font-display:block
