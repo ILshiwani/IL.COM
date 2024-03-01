@@ -1,0 +1,61 @@
+
+<pre data-sly-use.product="com.Idealake.core.models.ClientsListsModel"/>
+<section id="our-clients">
+	<div class="container">
+		<div class="row">
+			<div class="heading">
+				<h2>${properties.heading}</h2>
+				<p>${properties.subHeading}</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div data-aos="fade-up" class="clients-logo">
+				<ul>
+					<li>
+						<sly data-sly-list.statsItem1="${product.products1.listChildren}">
+						<div class="clientImgWrap"><img data-src="${statsItem1.imgPath1}"
+														alt="5paisa" class="lazy"></div>
+						</sly>
+					</li>
+					<li>
+						<sly data-sly-list.statsItem2="${product.products2.listChildren}">
+						<div class="clientImgWrap"><img data-src="${properties.imgPath2}"
+														alt="kotak" class="lazy"></div>
+
+						</sly>
+					</li>
+					<li>
+						<sly data-sly-list.statsItem3="${product.products3.listChildren}">
+						<div class="clientImgWrap"><img data-src="${statsItem3.imgPath3}"
+														alt="axis-bank" class="lazy"></div>
+						</sly>
+					</li>
+					<li>
+						<sly data-sly-list.statsItem4="${product.products4.listChildren}">
+						<div class="clientImgWrap"><img data-src="${statsItem4.imgPath4}"
+														alt="icici bank" class="lazy"></div>
+						</sly>
+					</li>
+
+
+					<li>
+						<sly data-sly-list.statsItemm5="${product.products5.listChildren}">
+						<div class="clientImgWrap"><img
+								data-src=${statsItem5.imgPath5} alt="DSP BlackRock"
+								class="lazy"></div>
+						</sly>
+
+					</li>
+					<li>
+						<sly data-sly-list.statsItem6="${product.productsss6.listChildren}">
+						<div class="clientImgWrap ergo"><img data-src=${statsItem6.imgPath6}
+															 alt="hdfc ergo" class="lazy"></div>
+						</sly>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
