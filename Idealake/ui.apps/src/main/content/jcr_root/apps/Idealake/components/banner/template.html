@@ -1,0 +1,115 @@
+<template data-sly-template.homePage="${ @ bannerObj }">
+    <div class="pageWrapper">
+        <section id="banner_section">
+            <div class="desk-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="left_panel">
+                            <div class="banner_content">
+                                <h2 class="sec-head">${properties.homeBannerHeading}</h2>
+                                <p class="banner_desc">${properties.homeBannerDescription}</p>
+                            </div>
+                        </div>
+                        <div class="right_panel">
+                            <div class="row banner-cards">
+                                <sly data-sly-list.bannerItem="${bannerObj.bannerCards.listChildren}">
+                                    <div class="card card_axis">
+                                        <div class="card_pic">
+                                            <picture>
+                                                <source srcset="${bannerItem.cardImage}" type="image/png"><img
+                                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                                    data-src="${bannerItem.cardImage}" alt="${bannerItem.altText}"
+                                                    title="Axis Bank" width="152" height="61" class="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="card_content">
+                                            <p>${bannerItem.imageDescription}</p>
+                                        </div>
+                                    </div>
+                                </sly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<template data-sly-template.servicesPage="${ @ bannerObj }">
+    <div class="pageWrapper">
+        <section class="services_banner_section">
+            <div class="container">
+                <div data-aos="fade-up" class="banner_section">
+                    <div class="left-side">
+
+                        <sly data-sly-test=${properties.checkTitle}><h4 class="banner-head">${properties.servicesBannerTitle}</h4></sly>
+                        <h1 class="banner-main-head">${properties.servicesBannerHeading}</h1>
+                        <div class="show-desktop">
+                            <p class="service-cont">${properties.servicesBannerDescription}</p>
+                            <sly data-sly-test=${properties.checkButton}>
+                                <a href="${properties.servicesBannerCtaLink}" class="btn btn-secondary">${properties.servicesBannerCtaText}</a></sly>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="service-banner"><img data-src="${properties.servicesBannerImage}"
+                                                         alt="${properties.servicesBannerAltText}" class="lazy">
+                        </div>
+                    </div>
+                    <div class="show-mobile">
+                        <p class="service-cont">${properties.servicesBannerDescription}</p><a href="${properties.servicesBannerCtaLink}" class="btn btn-secondary">${properties.servicesBannerCtaText}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<template data-sly-template.serviceDetails="${ @ bannerObj }">
+    <div class="pageWrapper">
+        <section id="serviceDetailsbanner">
+            <picture>
+                <source media="(max-width:575px)" srcset="assets/images/service-details-mob.jpg"><img
+                    data-src="${properties.servicesDetailsBgImage}" alt="${properties.servicesDetailsBgAltText}" class="lazy banner-bg-img">
+            </picture>
+            <div class="banner-info-wrapper">
+                <div class="container">
+                    <div class="bannerInfo"><span class="${properties.iconType}"></span>
+                        <h2 class="bannerinfoHead">${properties.serviceDetailsTitle}</h2>
+                        <p class="bannerinfoDesc">${properties.serviceDetailsSubTitle}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<template data-sly-template.articleListing="${ @ bannerObj }">
+    <div class="pageWrapper">
+        <section id="blog-listing-banner">
+            <div class="container">
+                <div class="sec-wrap">
+                    <div class="cont-wrap">
+                        <h1 class="banner-head">${properties.articleListTitle}</h1>
+                        <p class="banner-desc">${properties.articleListDescription}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<template data-sly-template.careersPage="${ @ bannerObj }">
+    <div class="pageWrapper">
+        <section id="carrerAtIdealake">
+            <h3 class="sec-title">${properties.careersBannerTitle}</h3>
+            <h4 class="sec-heading">${properties.careersBannerHeading}</h4>
+            <div class="imageText">
+                <h1 class="text-on-image">${properties.textOnImg}</h1>
+                <h2 class="see-open-pos">${properties.openPosition}</h2><a href="${properties.imageLink}"><img
+                    src="${properties.iconImage}" alt="${properties.iconAltText}"></a>
+            </div>
+        </section>
+    </div>
+</template>
+

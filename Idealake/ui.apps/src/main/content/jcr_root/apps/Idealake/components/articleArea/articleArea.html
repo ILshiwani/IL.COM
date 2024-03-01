@@ -13,7 +13,7 @@
                                     <picture>
                                         <source srcset="${articleItem.articleImage}" type="image/png"><img
                                             src="${articleItem.articleImage}"
-                                            data-src="${articleItem.articleImage}" alt="Toggle Up!"
+                                            data-src="${articleItem.articleImage}" alt="${articleItem.articleImgAltText}"
                                             class="lazy">
                                     </picture>
                                 </div>
@@ -32,7 +32,7 @@
                             <source media="(max-width:767px)" srcset="assets/images/article-mob-4.png"><img
                                 src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                                 data-src="${properties.articleImageRight}"
-                                alt=" Why Agile is Not Agile Anymore? " class="lazy">
+                                alt=" ${properties.articleImgRightAltText} " class="lazy">
                         </picture>
                     </div>
                     <div class="art-list">
