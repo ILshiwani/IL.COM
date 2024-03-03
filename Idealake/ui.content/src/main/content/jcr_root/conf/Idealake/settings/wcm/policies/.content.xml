@@ -344,9 +344,9 @@
                         jcr:lastModified="{Date}2024-02-20T13:06:09.907+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Base Policy"
+                        jcr:title="Solution Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[Idealake.Global,Idealake.services]"
+                        clientlibs="[Idealake.Services]"
                         clientlibsAsync="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1708070216176>
@@ -356,7 +356,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Solution Details Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="Idealake.Global,Idealake.-service-details"
+                        clientlibs="Idealake.Service-details"
                         clientlibsAsync="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1708285420453>
@@ -367,18 +367,30 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Contact Us"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[Idealake.Global,Idealake.ContactUs]"
+                        clientlibs="[Idealake.ContactUs]"
                         clientlibsAsync="false"
                         clientlibsJsHead="Idealake.dependencies">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1708073175652>
+                <policy_277682143291200
+                        jcr:description="Page Policies for home page."
+                        jcr:lastModified="{Date}2024-02-16T15:00:09.003+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Home Page"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[Idealake.homepage]"
+                        clientlibsAsync="false"
+                        clientlibsJsHead="Idealake.dependencies">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_277682143291200>
                 <policy_170899559888
                         jcr:lastModified="{Date}2024-02-20T13:06:09.907+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Base Policy"
+                        jcr:title="Article Details Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[Idealake.Global,Idealake.Article-Details]"
+                        clientlibs="[Idealake.Article-Details]"
                         clientlibsAsync="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_170899559888>
@@ -386,9 +398,9 @@
                         jcr:lastModified="{Date}2024-02-20T13:06:09.907+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Base Policy"
+                        jcr:title="Article Listing Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[Idealake.Global,Idealake.Article-Listing]"
+                        clientlibs="[Idealake.Article-Listing]"
                         clientlibsAsync="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1574694950110>
