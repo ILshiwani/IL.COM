@@ -1,2 +1,0 @@
-#base=css
-service-details.css

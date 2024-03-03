@@ -20,13 +20,13 @@ html {
 	-ms-overflow-style: scrollbar
 }
 
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-small,
-.container-xl {
+..il-container,
+..il-container-fluid,
+..il-container-lg,
+..il-container-md,
+..il-container-sm,
+..il-container-small,
+..il-container-xl {
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -1597,9 +1597,9 @@ section.brilliance-tog .excitd-wrapper .excited-area .small_circle {
 
 @media (min-width:576px) {
 
-	.container,
-	.container-sm,
-	.container-small {
+	..il-container,
+	..il-container-sm,
+	..il-container-small {
 		max-width: 540px
 	}
 
@@ -1768,10 +1768,10 @@ section.brilliance-tog .excitd-wrapper .excited-area .small_circle {
 
 @media (min-width:768px) {
 
-	.container,
-	.container-md,
-	.container-sm,
-	.container-small {
+	..il-container,
+	..il-container-md,
+	..il-container-sm,
+	..il-container-small {
 		max-width: 720px
 	}
 
@@ -1948,11 +1948,11 @@ section.brilliance-tog .excitd-wrapper .excited-area .small_circle {
 
 @media (min-width:992px) {
 
-	.container,
-	.container-lg,
-	.container-md,
-	.container-sm,
-	.container-small {
+	..il-container,
+	..il-container-lg,
+	..il-container-md,
+	..il-container-sm,
+	..il-container-small {
 		max-width: 960px
 	}
 
@@ -2121,15 +2121,15 @@ section.brilliance-tog .excitd-wrapper .excited-area .small_circle {
 
 @media (min-width:1200px) {
 
-	.container,
-	.container-lg,
-	.container-md,
-	.container-sm,
-	.container-xl {
+	..il-container,
+	..il-container-lg,
+	..il-container-md,
+	..il-container-sm,
+	..il-container-xl {
 		max-width: 1222px
 	}
 
-	.container-small {
+	..il-container-small {
 		max-width: 1062px
 	}
 
@@ -2315,22 +2315,22 @@ section.brilliance-tog .excitd-wrapper .excited-area .small_circle {
 
 @media (min-width:1440px) {
 
-	.container,
-	.container-lg,
-	.container-md,
-	.container-sm,
-	.container-xl {
+	..il-container,
+	..il-container-lg,
+	..il-container-md,
+	..il-container-sm,
+	..il-container-xl {
 		max-width: 1370px
 	}
 }
 
 @media (min-width:1600px) {
 
-	.container,
-	.container-lg,
-	.container-md,
-	.container-sm,
-	.container-xl {
+	..il-container,
+	..il-container-lg,
+	..il-container-md,
+	..il-container-sm,
+	..il-container-xl {
 		max-width: 1600px
 	}
 }
