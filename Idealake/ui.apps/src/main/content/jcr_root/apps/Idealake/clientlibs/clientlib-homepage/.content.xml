@@ -3,6 +3,4 @@
     jcr:primaryType="cq:ClientLibraryFolder"
     allowProxy="{Boolean}[true]"
     categories="[Idealake.homepage]"
-          dependencies="[Idealake.Global]"
-          cssProcessor="[default:none,min:yui]"
-          jsProcessor="[default:none,min:gcc]"/>
+          dependencies="[Idealake.Global]"/>

@@ -4,7 +4,7 @@
     <jcr:content
         cq:lastModified="{Date}2024-02-19T00:25:36.963+05:30"
         cq:lastModifiedBy="admin"
-        cq:policy="Idealake/components/basepage/policy"
+        cq:policy="Idealake/components/page/policy"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/policies/mappings">
         <root
