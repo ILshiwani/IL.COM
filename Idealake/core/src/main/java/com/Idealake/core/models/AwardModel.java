@@ -8,10 +8,10 @@ import javax.inject.Inject;
 
 
 @Model(adaptables = Resource.class)
-public class TestimonialModel {
+public class AwardModel {
 
     @Inject
     @Optional
-    public Resource testCards;
+    public Resource awardCards;
 
 }
