@@ -11,6 +11,16 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Heading"
+                            name="./title"/>
+                    <subtitle
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldLabel="Sub Heading"
+                            name="./subtitle"/>
                     <images
                         jcr:primaryType="nt:unstructured"
                         composite="{Boolean}true"
@@ -25,16 +35,21 @@
                                     sling:resourceType="granite/ui/components/coral/foundation/well">
                                     <items jcr:primaryType="nt:unstructured">
 
-                                        <heading
+                                        <pngimage
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                            fieldLabel="Heading"
-                                            name="heading"/>
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="ImagePath"
+                                            name="pngImage"/>
+                                        <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title"
+                                                name="heading"/>
                                         <para
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="cq/gui/components/authoring/dialog/richtext"
                                                 fieldDescription="The maximum length for this field is 85"
-                                                fieldLabel="Paragraph"
+                                                fieldLabel="Sub Title"
                                                 name="para"
                                                 removeSingleParagraphContainer="{Boolean}true"
                                                 useFixedInlineToolbar="{Boolean}true"
@@ -49,20 +64,10 @@
                                                     jcr:primaryType="nt:unstructured"
                                                     cq-dialog-rte-required="true"/>
                                         </para>
-                                        <pngimage
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                            fieldLabel="Png Image"
-                                            name="pngImage"/>
-                                        <scriptImage
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                            fieldLabel="Script Image"
-                                            name="scriptImage"/>
                                         <cardAlignment
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                fieldLabel="Card Alignment"
+                                                fieldLabel="Orientation"
                                                 name="cardAlignment">
                                                 <items
                                                     jcr:primaryType="nt:unstructured">
@@ -106,16 +111,7 @@
                             </items>
                         </field>
                     </images>
-                    <title
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title"
-                        name="./title"/>
-                    <subtitle
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                        fieldLabel="Subtitle"
-                        name="./subtitle"/>
+
                 </items>
             </column>
         </items>
