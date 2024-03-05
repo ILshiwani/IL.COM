@@ -1,10 +1,6 @@
-<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-	<sly data-sly-call="${clientlib.css @ categories='Idealake.Global'}"/>
-</sly>
-<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
-<pre data-sly-use.product="com.Idealake.core.models.ClientsListsModel"/>
 
-<<section id="our-clients">
+<pre data-sly-use.product="com.Idealake.core.models.ClientsListsModel"/>
+<section id="our-clients">
 	<div class="container">
 		<div class="row">
 			<div class="heading">
@@ -16,16 +12,16 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div data-aos="fade-up" class="clients-logo">
-				<ul data-sly-list.statsItem="${product.products}">
-					<li>
+				<ul>
+					<sly data-sly-list.statsItem="${product.products.listChildren}">
 
+					<li>
 						<div class="clientImgWrap"><img data-src="${statsItem.imgPath}"
 														alt="5paisa" class="lazy"></div>
 					</li>
+					</sly>
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
-
-
