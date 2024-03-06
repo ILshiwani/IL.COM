@@ -11,16 +11,17 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <subtitle
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Subtitle"
-                            name="./subtitle"/>
+
                     <title
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Title"
+                            fieldLabel="Heading"
                             name="./title"/>
+                    <subtitle
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Description"
+                            name="./subtitle"/>
                     <cards
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
@@ -38,17 +39,17 @@
                                         <heading
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Heading"
+                                                fieldLabel="Counter Text"
                                                 name="heading"/>
                                         <counternumber
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Counter-Number"
+                                                fieldLabel="Counter Number"
                                                 name="counternumber"/>
                                         <symbol
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Symbol"
+                                                fieldLabel="Counter Symbol"
                                                 name="symbol"/>
                                     </items>
                                 </column>
