@@ -11,12 +11,12 @@
 		<div class="full-stack-wrapper">
 			<sly data-sly-list.statsItem="${product.products.listChildren}">
 			<div data-aos="fade-up" class="we-design">
-				<div class="head">${statsItem.paraHeading}</div>
+				<div class="head">${statsItem.imgtitle}</div>
 				<div class="img-wrapper">
 					<picture>
-						<source srcset="${statsItem.imgSrc}" type="image/png"><img
+						<source srcset="${statsItem.webPimgPath}" type="image/png"><img
 							src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-							data-src="${statsItem.imgPath}" alt="we_design" width="268"
+							data-src="${statsItem.pngimgPath}" alt="${statsItem.altText}" width="268"
 							height="504" class="lazy">
 					</picture>
 				</div>
