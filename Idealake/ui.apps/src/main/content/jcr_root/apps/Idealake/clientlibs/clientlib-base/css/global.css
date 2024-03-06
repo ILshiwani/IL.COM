@@ -1457,7 +1457,7 @@ img{
     border-top:2px solid #fff;
     border-left:2px solid #fff
 }
-.container{
+..il-container{
     width:100%;
     max-width:106.2rem;
     margin:0 auto
@@ -1540,7 +1540,7 @@ img{
     animation-name:scrollAni
 }
 @media only screen and (max-width:1199px){
-    .container{
+    ..il-container{
         width:100%;
         padding:0 1.5rem
     }
@@ -1553,7 +1553,7 @@ img{
         bottom:50px;
         right:20px
     }
-    .container.typ-p-0{
+    ..il-container.typ-p-0{
         padding:0
     }
     .pageWrapper{

@@ -1,0 +1,27 @@
+
+<pre data-sly-use.product="com.Idealake.core.models.ClientsListsModel"/>
+<section id="our-clients">
+	<div class="container">
+		<div class="row">
+			<div class="heading">
+				<h2>${properties.heading}</h2>
+				<p>${properties.subHeading}</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div data-aos="fade-up" class="clients-logo">
+				<ul>
+					<sly data-sly-list.statsItem="${product.products.listChildren}">
+
+					<li>
+						<div class="clientImgWrap"><img data-src="${statsItem.imgPath}"
+														alt="5paisa" class="lazy"></div>
+					</li>
+					</sly>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

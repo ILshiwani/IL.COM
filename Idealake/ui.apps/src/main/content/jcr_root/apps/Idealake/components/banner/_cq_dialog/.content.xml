@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Banner Variation's"
+          sling:resourceType="cq/gui/components/authoring/dialog" >
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+
+                    <triggerType
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            granite:class="cq-dialog-dropdown-showhide"
+                            fieldLabel="Choose Banner Variation."
+                            name="./triggerType">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-dialog-dropdown-showhide-target=".connect-layout-show-hide"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <homePage
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Home Page Banner"
+                                    value="homePage"/>
+                            <servicesPage
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Services Page Banner"
+                                    value="servicesPage"/>
+                            <serviceDetails
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Service-Details Banner"
+                                    value="serviceDetails"/>
+                            <articleListing
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Article Listing Banner"
+                                    value="articleListing"/>
+                            <carrersPage
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Career's Page Banner"
+                                    value="careersPage"/>
+                        </items>
+                    </triggerType>
+
+                    <target-one-container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            granite:class="hide connect-layout-show-hide">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="homePage"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Banner Heading"
+                                    name="./homeBannerHeading"/>
+                            <description
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                    fieldLabel="Banner Description"
+                                    name="./homeBannerDescription"/>
+                            <imageSection
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    composite="{Boolean}true"
+                                    fieldLabel="Images Section">
+                                <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./bannerCards">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <imageSectionItem
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <cardImage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Image Path"
+                                                        name="./cardImage"
+                                                        rootPath="/content/dam"/>
+                                                <altText
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Alternate Text for Image"
+                                                        name="./altText"/>
+                                                <imageDescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                        fieldLabel="Image Description"
+                                                        name="./imageDescription"/>
+                                            </items>
+                                        </imageSectionItem>
+                                    </items>
+                                </field>
+                            </imageSection>
+                        </items>
+                    </target-one-container>
+
+                    <target-two-container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            granite:class="hide connect-layout-show-hide">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="servicesPage"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Banner Title"
+                                    name="./servicesBannerTitle"/>
+                            <checkTitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    name="./checkTitle"
+                                    text="Check to show Title."
+                                    uncheckedValue="False"
+                                    value="True"/>
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Banner Heading"
+                                    name="./servicesBannerHeading"/>
+                            <description
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                    fieldLabel="Banner Description"
+                                    name="./servicesBannerDescription"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="Image Path"
+                                    name="./servicesBannerImage"
+                                    rootPath="/content/dam"/>
+                            <altText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Alternate Text for Image"
+                                    name="./servicesBannerAltText"/>
+                            <checkButton
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    name="./checkButton"
+                                    text="Check to show CTA Button."
+                                    uncheckedValue="False"
+                                    value="True"/>
+                            <ctaText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="CTA Text"
+                                    name="./servicesBannerCtaText"/>
+                            <ctaLink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="CTA Link"
+                                    name="./servicesBannerCtaLink"/>
+                        </items>
+                    </target-two-container>
+
+                    <target-three-container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            granite:class="hide connect-layout-show-hide">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="serviceDetails"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Banner Title"
+                                    name="./serviceDetailsTitle"/>
+                            <subTitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Banner Heading"
+                                    name="./serviceDetailsSubTitle"/>
+                            <iconType
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Choose Icon."
+                                    name="./iconType">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <uxDesign
+                                            jcr:primaryType="nt:unstructured"
+                                            text="UX Design"
+                                            value="icon-user-experience"/>
+                                    <enterprise
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Enterprise Application"
+                                            value="icon-enterprise-application"/>
+                                    <visualDesign
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Visual Design"
+                                            value="icon-visual-design"/>
+                                    <mobSolution
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Mobile Solution"
+                                            value="icon-mob-app-solutions"/>
+                                    <eCommerce
+                                            jcr:primaryType="nt:unstructured"
+                                            text="E-Commerce Solution"
+                                            value="icon-ecommerce-solutions"/>
+                                    <ai
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Artificial Intelligence"
+                                            value="icon-artificial-intelligence"/>
+                                    <machineLearning
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Machine Learning"
+                                            value="icon-machine-learning"/>
+                                    <dataLed
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Data Led Management"
+                                            value="icon-data-led"/>
+                                    <cloudSolution
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Cloud Solution"
+                                            value="icon-cloud-hosting"/>
+                                    <onsite
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Onsite Solution"
+                                            value="icon-onsite-professionals"/>
+                                    <content
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Content Solution"
+                                            value="icon-content"/>
+                                    <brandWorkshop
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Brand Solution"
+                                            value="icon-Brand-Workshop"/>
+                                </items>
+                            </iconType>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="Image Path"
+                                    name="./servicesDetailsBgImage"
+                                    rootPath="/content/dam"/>
+                            <altText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Alternate Text for Image"
+                                    name="./servicesDetailsBgAltText"/>
+                        </items>
+                    </target-three-container>
+
+                    <target-four-container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            granite:class="hide connect-layout-show-hide">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="articleListing"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Banner Title"
+                                    name="./articleListTitle"/>
+                            <description
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                    fieldLabel="Banner Description"
+                                    name="./articleListDescription"/>
+                        </items>
+                    </target-four-container>
+
+                    <target-five-container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            granite:class="hide connect-layout-show-hide">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="careersPage"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Banner Title"
+                                    name="./careersBannerTitle"/>
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Banner Heading"
+                                    name="./careersBannerHeading"/>
+                            <textOnImg
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Text On Image."
+                                    name="./textOnImg"/>
+                            <openPosition
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Open Position Text."
+                                    name="./openPosition"/>
+                            <iconImage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="Icon Image Path"
+                                    name="./iconImage"
+                                    rootPath="/content/dam"/>
+                            <iconAltText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Alternate Text for Image"
+                                    name="./iconAltText"/>
+                            <imageLink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="Icon Image Link Path."
+                                    name="./imageLink"
+                                    rootPath="/content/dam"/>
+                        </items>
+                    </target-five-container>
+
+                </items>
+
+            </column>
+        </items>
+    </content>
+</jcr:root>

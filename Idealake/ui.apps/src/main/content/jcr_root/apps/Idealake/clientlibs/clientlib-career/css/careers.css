@@ -275,7 +275,7 @@ html {
   text-align: center;
 }
 #carrerAtIdealake .imageText .text-on-image {
-  background: url(../images/careerBG.png);
+  background: url(/content/dam/Idealake/images/careerBG.png);
   background-position: center;
   -webkit-background-clip: text;
   color: transparent;
@@ -2473,7 +2473,7 @@ html {
     margin-bottom: 1.6rem;
   }
   #carrerAtIdealake .imageText .text-on-image {
-    background: url(../images/careerBG-mob.png);
+    background: url(/content/dam/Idealake/images/careerBG-mob.png);
     background-position: center;
     -webkit-background-clip: text;
     color: transparent;

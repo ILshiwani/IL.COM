@@ -33,14 +33,20 @@
                                                 name="./articleHeading"/>
                                         <articleDescription
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                                                 fieldLabel="Article Description"
                                                 name="./articleDescription"/>
                                         <articleImage
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                                 fieldLabel="Article Image"
-                                                name="./articleImage"/>
+                                                name="./articleImage"
+                                                rootPath="/content/dam"/>
+                                        <articleImgAltText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Alternate Text for Image"
+                                                name="./articleImgAltText"/>
                                         <readMoreLink
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
@@ -58,14 +64,20 @@
                             name="./articleHeadingRight"/>
                     <articleDescriptionRight
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                             fieldLabel="Article Description"
                             name="./articleDescriptionRight"/>
                     <articleImageRight
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                             fieldLabel="Article Image"
-                            name="./articleImageRight"/>
+                            name="./articleImageRight"
+                            rootPath="/content/dam"/>
+                    <articleImgRightAltText
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Alternate Text for Image"
+                            name="./articleImgRightAltText"/>
                     <readMoreLinkRight
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
