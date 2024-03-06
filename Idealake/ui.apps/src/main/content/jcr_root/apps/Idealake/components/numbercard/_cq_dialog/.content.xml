@@ -11,29 +11,6 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-<<<<<<< HEAD
-
-=======
-                    <backgroundImagePath
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                            fieldLabel="Background Image Path"
-                            name="./backgroundImagePath"/>
->>>>>>> f5774ba717dd72424bb0c6cc8d2361705f4445b9
-                    <title
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Heading"
-                            name="./title"/>
-                    <subtitle
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-<<<<<<< HEAD
-                            fieldLabel="Description"
-=======
-                            fieldLabel="Subtitle"
->>>>>>> f5774ba717dd72424bb0c6cc8d2361705f4445b9
-                            name="./subtitle"/>
                     <cards
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
