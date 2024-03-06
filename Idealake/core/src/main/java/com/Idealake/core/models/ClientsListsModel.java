@@ -26,22 +26,6 @@ public class ClientsListsModel {
 
     @Inject
     @Optional
-    public Resource products1;
-    @Inject
-    @Optional
-    public Resource products2;
-    @Inject
-    @Optional
-    public Resource products3;
-    @Inject
-    @Optional
-    public Resource products4;
-    @Inject
-    @Optional
-    public Resource products5;
-    @Inject
-    @Optional
-    public Resource products6;
+    public Resource products;
 
 }
-
