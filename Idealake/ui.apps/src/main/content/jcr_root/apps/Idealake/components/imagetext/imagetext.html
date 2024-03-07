@@ -8,14 +8,14 @@
 		<sly data-sly-list.text="${product.images.listChildren}">
 			<div class="${text.cardAlignment}">
 				<div data-aos="fade-up" class="right-col aos-init aos-animate">
-					<a href="${text.link}" target="${text.openInNewtab}">
+
 					<picture>
 						<source srcset="${text.pngImage}" type="image/png">
 						<img src="${text.scriptImage}"
 							 data-src="${text.pngImage}" alt="mc-d" width="380" height="450"
 							 class="lazy">
 					</picture>
-					</a>
+
 				</div>
 				<div data-aos="fade-up" class="left-col aos-init aos-animate">
 					<h4 class="col-head">${text.heading} </h4>
