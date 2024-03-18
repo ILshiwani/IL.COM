@@ -83,7 +83,7 @@ function rollupcounter() {
    }))
 }
 $(document).ready((function () {
-   myslider(), tabs(), winWidth <= 1024 && $(".card").slice("4", "12").hide(), rollupcounter()
+    /* myslider(),*/ tabs(), winWidth <= 1024 && $(".card").slice("4", "12").hide(), rollupcounter()
 })), $("#load").click((function (t) {
    t.preventDefault(), $(".card:hidden").slice(0, 2).show(), 0 == $(".card:hidden").length && $("#load").css("display", "none")
 }));
