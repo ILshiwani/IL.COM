@@ -1,0 +1,43 @@
+
+<pre data-sly-use.product="com.Idealake.core.models.ServicesTabModel"/>
+<section class="powered-by">
+	<div class="container">
+		<h2 class="section-title text-center">${properties.heading}</h2>
+		<div data-aos="fade-up" class="tab-wrap">
+			<div class="tab-cont-wrap">
+				<sly data-sly-list.statsItem="${product.products.listChildren}">
+
+				<div class="tab-cont"><span class="icon icon-${statsItem.iconType}"></span>
+					<p>${statsItem.iconName}</p>
+				</div>
+				</sly>
+			</div>
+		</div>
+		<div data-aos="fade-up" class="row mobile-hide">
+			<div class="col md-12 circle-wrap">
+				<div class="middle-img"><img data-src="${properties.imgPath1}" alt="tech"
+											 class="lazy"></div>
+					<sly data-sly-list.statsItemm="${product.productss.listChildren}">
+					<span class="side-cont vue"><span
+					class="icon icon-${statsItemm.iconType}"></span>
+									<p>${statsItemm.iconName}</p>
+				</span></sly>
+			</div>
+		</div>
+		<div class="mobile-row">
+			<div class="comp-img"><img data-src="${properties.imgPath2}" alt="text"
+									   class="lazy"></div>
+			<div class="skills-list">
+				<sly data-sly-list.statsItemmm="${product.productsss.listChildren}">
+				<span class="side-cont vue"><span class="icon icon-${statsItemmm.iconType}"></span>
+									<p>${statsItemmm.iconName}</p>
+
+				</span>
+				</sly>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
