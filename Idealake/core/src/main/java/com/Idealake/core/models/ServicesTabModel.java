@@ -22,39 +22,15 @@ import org.apache.sling.models.annotations.Optional;
 import javax.inject.Inject;
 
 @Model(adaptables=Resource.class)
-public class ClientsListModel {
+public class ServicesTabModel {
 
     @Inject
     @Optional
-    public Resource products1;
+    public Resource products;
     @Inject
     @Optional
-    public Resource products2;
+    public Resource productss;
     @Inject
     @Optional
-    public Resource products3;
-    @Inject
-    @Optional
-    public Resource products4;
-    @Inject
-    @Optional
-    public Resource products5;
-    @Inject
-    @Optional
-    public Resource products6;
-    @Inject
-    @Optional
-    public Resource products7;
-    @Inject
-    @Optional
-    public Resource products8;
-    @Inject
-    @Optional
-    public Resource products9;
-    @Inject
-    @Optional
-    public Resource products10;
-    @Inject
-    @Optional
-    public Resource products11;
+    public Resource productsss;
 }

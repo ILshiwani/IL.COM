@@ -14,31 +14,31 @@
                     <mainHeading
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                            fieldLabel="Heading Text"
+                            fieldLabel="Heading"
                             name="./mainHeading"/>
-                    <imgSrc
+                    <mobileimgPath
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                             fieldDescription="Select Path"
-                            fieldLabel="Image-Source"
-                            name="./imgSrc"
+                            fieldLabel="Mobile Image"
+                            name="./mobileimgPath"
                             rootPath="/content/dam"/>
-                    <imgPath
+                    <desktopimgPath
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                             fieldDescription="Select Path"
-                            fieldLabel="Image Path"
-                            name="./imgPath"
+                            fieldLabel="Desktop Image"
+                            name="./desktopimgPath"
                             rootPath="/content/dam"/>
                     <knowmore
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Know More Text"
+                            fieldLabel="CTA Text"
                             name="./knowmore"/>
                     <knowmorebutton
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/linkpath"
-                            fieldLabel="Know More Text"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldLabel="CTA Link"
                             name="./knowmorebutton"/>
 
                     <CounterCards
@@ -59,18 +59,18 @@
                                         <num
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
-                                                fieldLabel="Number"
+                                                fieldLabel="Number Count"
                                                 name="./num"/>
                                         <title
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Title"
+                                                fieldLabel="Highlighted Text"
                                                 name="./title"/>
                                         <desc
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="desc"
-                                                name="./description"/>
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldLabel="Highlighted subtext"
+                                                name="./desc"/>
                                     </items>
                                 </column>
                             </items>

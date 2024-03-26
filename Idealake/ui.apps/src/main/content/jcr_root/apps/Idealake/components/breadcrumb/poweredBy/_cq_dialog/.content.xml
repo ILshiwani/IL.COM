@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Number Card"
+          jcr:title="Client List"
           sling:resourceType="cq/gui/components/authoring/dialog">
     <content
             jcr:primaryType="nt:unstructured"
@@ -11,57 +11,51 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <backgroundImagePath
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                            fieldLabel="Background Image Path"
-                            name="./backgroundImagePath"/>
-                    <title
+                    <heading
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Heading"
-                            name="./title"/>
-                    <subtitle
+                            fieldLabel="Heading Text"
+                            name="./heading"/>
+                    <subHeading
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Description"
-                            name="./subtitle"/>
-                    <cards
+                            fieldLabel="subHeading Text"
+                            name="./subHeading"/>
+
+
+                    <tab
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                             composite="{Boolean}true"
-                            fieldLabel="Number Card">
+                            fieldLabel="Tab"
+                            name="./tab">
                         <field
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container"
-                                name="./cards">
+                                name="./products">
                             <items jcr:primaryType="nt:unstructured">
                                 <column
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                     <items jcr:primaryType="nt:unstructured">
-                                        <heading
+
+                                        <imgPath
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Counter Text"
-                                                name="heading"/>
-                                        <counternumber
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Counter Number"
-                                                name="counternumber"/>
-                                        <symbol
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Counter Symbol"
-                                                name="symbol"/>
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Select Path"
+                                                fieldLabel="Image Path"
+                                                name="./imgPath"
+                                                rootPath="/content/dam"/>
                                     </items>
                                 </column>
                             </items>
                         </field>
-                    </cards>
+                    </tab>
                 </items>
             </column>
         </items>
     </content>
 </jcr:root>
+
+
+

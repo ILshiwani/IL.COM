@@ -1,0 +1,55 @@
+
+<pre data-sly-use.product="com.Idealake.core.models.ClientsListsModel"/>
+<section id="our-clients">
+	<div class="container">
+		<div class="row">
+			<div class="heading">
+				<h2>${properties.heading}</h2>
+				<p>${properties.subHeading}</p>
+			</div>
+		</div>
+	</div>
+	<section class="powered-by">
+		<div class="container">
+			<h2 class="section-title text-center">Powered By</h2>
+			<div data-aos="fade-up" class="tab-wrap">
+				<div class="tab-cont-wrap">
+					<div class="tab-cont"><span class="icon icon-design"></span>
+						<p>$[statsItem.title}</p>
+					</div>
+
+
+			<div data-aos="fade-up" class="row mobile-hide">
+				<div class="col md-12 circle-wrap">
+					<div class="middle-img"><img data-src="${statsItem.imgPath}" alt="tech"
+												 class="lazy"></div><span class="side-cont vue"><span
+						class="icon icon-vuejs"></span>
+									<p>Vuejs</p>
+								</span><span class="side-cont react"><span class="icon icon-react"></span>
+									<p>$(statsItem.subtitle}</p>
+								</span><span class="side-cont selenium"><span class="icon icon-selenium"></span>
+									<p>Selenium</p>
+
+				</div>
+			</div>
+			<div class="mobile-row">
+				<div class="comp-img"><img data-src="assets/images/center-Image3.jpg" alt="text"
+										   class="lazy"></div>
+				<div class="skills-list"><span class="side-cont vue"><span class="icon icon-vuejs"></span>
+									<p>Vuejs</p>
+								</span><span class="side-cont java"><span class="icon icon-java"></span>
+									<p>Java</p>
+								</span><span class="side-cont react"><span class="icon icon-react"></span>
+									<p>React Native</p>
+								</span><span class="side-cont html"><span class="icon icon-html"></span>
+									<p>HTML</p>
+								</span><span class="side-cont selenium"><span class="icon icon-selenium"></span>
+									<p>Selenium</p>
+								</span><span class="side-cont angular"><span class="icon icon-angular"></span>
+									<p>Angular</p>
+								</span><span class="side-cont figma"><span class="icon icon-figma"></span>
+									<p>Figma</p>
+								</span></div>
+			</div>
+		</div>
+	</section>
