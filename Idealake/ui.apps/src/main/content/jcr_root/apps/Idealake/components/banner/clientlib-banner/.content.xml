@@ -3,4 +3,4 @@
     jcr:primaryType="cq:ClientLibraryFolder"
     allowProxy="{Boolean}true"
     categories="[Idealake.Banner]"
-          dependencies="[Idealake.homepage,Idealake.Services,Idealake.Article-Listing,Idealake.Career,Idealake.ContactUs]"/>
+          dependencies="[Idealake.homepage,Idealake.services,Idealake.-service-details,Idealake.Article-Listing,Idealake.Career,Idealake.ContactUs]"/>
