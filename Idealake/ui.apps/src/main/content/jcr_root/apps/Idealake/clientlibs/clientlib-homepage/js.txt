@@ -3,7 +3,9 @@ jquery.min.js
 aos.js
 fcp.js
 global.js
-cardslider.js
-swiper.js
-mCustomScrollbar.js
+jquery.cardslider.min.js
+swiper.min.js
+jquery.mCustomScrollbar.min.js
+home.js
+jquery.mousewheel.min.js
 

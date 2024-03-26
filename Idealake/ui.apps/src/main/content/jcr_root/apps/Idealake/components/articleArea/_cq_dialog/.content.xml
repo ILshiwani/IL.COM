@@ -47,6 +47,11 @@
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                 fieldLabel="Alternate Text for Image"
                                                 name="./articleImgAltText"/>
+                                        <readMoreText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Read More Text"
+                                                name="./readMoreText"/>
                                         <readMoreLink
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
@@ -78,6 +83,11 @@
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                             fieldLabel="Alternate Text for Image"
                             name="./articleImgRightAltText"/>
+                    <readMoreTextRight
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Read More Text"
+                            name="./readMoreTextRight"/>
                     <readMoreLinkRight
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
