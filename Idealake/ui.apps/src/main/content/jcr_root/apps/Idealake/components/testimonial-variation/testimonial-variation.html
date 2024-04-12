@@ -1,0 +1,43 @@
+<sly  data-sly-use.testimonialObj="com.Idealake.core.models.TestimonialVariationModel"/>
+
+<div class="pageWrapper">
+<section id="testimonial">
+    <div class="container testimonialwrap">
+        <h2 data-aos="fade-up" class="sec-head">${properties.heading}</h2>
+        <div data-aos="fade-up" class="sliderWrap">
+            <div class="my-slider">
+                <ul>
+                    <sly data-sly-list.testimonialItem="${testimonialObj.testimonialCards.listChildren}">
+                        <li>
+                            <p class="text">${testimonialItem.cardDesc} </p>
+                            <div class="user">
+                                <div class="userinfo">
+                                    <div class="userDetail">
+                                        <p class="username">${testimonialItem.clientName}</p>
+                                        <p class="userpos">${testimonialItem.clientPosition}</p>
+                                    </div>
+                                </div>
+                                <div class="complogo"><img
+                                        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                        data-src="${testimonialItem.companyLogo}"
+                                        alt="${testimonialItem.imgAlt}" class="lazy"></div>
+                            </div>
+                        </li>
+                    </sly>
+                </ul>
+            </div>
+                <div class="mobwrap">
+                    <div class="Thumbwrap">
+                        <sly data-sly-list.testimonialItem="${testimonialObj.bgIcons.listChildren}">
+                            <a href="${testimonialItem.iconLink}" data-slide="${testimonialItem.slideNo}" class="${testimonialItem.cssClass}">
+                                <img
+                                src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-src="${testimonialItem.companyIcon}"
+                                alt="${testimonialItem.iconImgAlt}" class="lazy"></a>
+                        </sly>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+</div>
