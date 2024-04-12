@@ -1,11 +1,14 @@
 #base=js
 jquery.min.js
+jquery.cardslider.min.js
+jquery.mCustomScrollbar.min.js
+jquery.mousewheel.min.js
 aos.js
 fcp.js
 global.js
-jquery.cardslider.min.js
+cardslider.js
 swiper.min.js
-jquery.mCustomScrollbar.min.js
+swiper.js
+mCustomScrollbar.js
 home.js
-jquery.mousewheel.min.js
 
