@@ -8,10 +8,15 @@ import javax.inject.Inject;
 
 
 @Model(adaptables = Resource.class)
-public class AwardModel {
+public class QueryModel {
 
     @Inject
     @Optional
-    public Resource awardcards;
+    public Resource emailLink;
+
+    @Inject
+    @Optional
+    public Resource social;
+
 
 }

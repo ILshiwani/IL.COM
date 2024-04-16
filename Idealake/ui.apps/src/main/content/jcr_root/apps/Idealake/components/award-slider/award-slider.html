@@ -1,13 +1,11 @@
-<sly  data-sly-use.awardObj="com.Idealake.core.models.AwardModel"/>
-
-    <div class="swiper awardSlider">
-        <div class="swiper-wrapper">
-            <sly data-sly-list.awardItem="${awardObj.awardCards.listChildren}">
-            <div class="swiper-slide">
-                <div class="img-wrap"><img src="${awardItem.awardimage}"
-                                           alt="${awardItem.imgAltText}" title="${awardItem.title}">
-                </div>
+<div data-sly-use.awardcard="com.Idealake.core.models.AwardModel" class="swiper awardSlider">
+    <div class="swiper-wrapper">
+        <sly data-sly-list.awardcardsItem="${awardcard.awardcards.listChildren}">
+        <div class="swiper-slide">
+            <div class="img-wrap">
+                    <img src="${awardcardsItem.awardimage}" alt="${awardcardsItem.imgAltText}" title="${awardcardsItem.title}">
             </div>
-            </sly>
         </div>
+        </sly>
     </div>
+</div>

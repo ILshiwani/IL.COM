@@ -1,135 +1,28 @@
-<div class="pageWrapper">
-<section id="testimonial">
+<section data-sly-use.testimonialcard="com.Idealake.core.models.TestimonialModel" id="testimonial">
     <div class="container testimonialwrap">
-        <h2 data-aos="fade-up" class="sec-head">Transformation that has won our clients' trust</h2>
+        <h2 data-aos="fade-up" class="sec-head">${properties.title}</h2>
         <div data-aos="fade-up" class="sliderWrap">
             <div class="my-slider">
                 <ul>
+                    <sly data-sly-list.testimonialItem="${testimonialcard.testimonialcards.listChildren}">
                     <li>
-                        <p class="text">We’ve had the pleasure of working with the great team at
-                            Idealake Information Technologies Pvt. Ltd for the last four years. Idealake
-                            collaborated with DSP BlackRock for the designing, development, and
-                            maintenance of our star website. <br>This has been possible because of a
-                            hands-on approach and involvement of our teams, when it came to ideation and
-                            incorporating those ideas. </p>
+                        <p class="text">${testimonialItem.des}</p>
                         <div class="user">
                             <div class="userinfo">
                                 <div class="userDetail">
-                                    <p class="username">Arvind Kumar</p>
-                                    <p class="userpos">Manager, Marketing.</p>
+                                    <p class="username">${testimonialItem.cliName}</p>
+                                    <p class="userpos">${testimonialItem.cliPos}</p>
                                 </div>
                             </div>
                             <div class="complogo"><img
                                     src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                    data-src="/content/dam/Idealake/images/clients/dsp-blackrock.png"
-                                    alt="DSP BlackRock" class="lazy"></div>
+                                    data-src="${testimonialItem.cliImg}"
+                                    alt="${testimonialItem.imgAlt}" class="lazy"></div>
                         </div>
                     </li>
-                    <li>
-                        <p class="text">We have been teaming up with ldealake Information Technologies
-                            Pvt. Ltd over the last three years and we identify them as partner. ldealake
-                            teamed up with Aditya Birla Retail Ltd. on the project to exclusively
-                            design, refine, and preserving of our ideal website. This has been
-                            attainable only because of a proactive approach and matching point of views
-                            between our teams.</p>
-                        <div class="user">
-                            <div class="userinfo">
-                                <div class="userDetail">
-                                    <p class="username">Janet Arole</p>
-                                    <p class="userpos">Group Manager Corporate, Communication.</p>
-                                </div>
-                            </div>
-                            <div class="complogo"><img
-                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                    data-src="/content/dam/Idealake/images/clients/aditya-birla.jpg" alt="aditya birla"
-                                    class="lazy"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="text">Working with Idealake Information Technologies Pvt. Ltd over the
-                            past three years has been gratifying and we consider them more as a partner.
-                            Quantum allied with Idealake, to take our website to a new level. The design
-                            creations, the enhancing, and maintenance of our website was all taken care
-                            of. The first-hand experience strategy and exchanging of ideas between our
-                            teams made it possible to achieve success in the project.</p>
-                        <div class="user">
-                            <div class="userinfo">
-                                <div class="userDetail">
-                                    <p class="username">Zubin Daboo</p>
-                                    <p class="userpos">Sr. Manager, Communications.</p>
-                                </div>
-                            </div>
-                            <div class="complogo"><img
-                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                    data-src="/content/dam/Idealake/images/clients/Quantum.png" alt="Quantum"
-                                    class="lazy"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="text">Idealake Information Technologies Pvt. Ltd has been associated
-                            with Reliance Mutual Fund as a development partner. They were successful in
-                            the development of the Reliance Mutual Fund website and An Online Trading
-                            Application with integration to Karvy Registrar and Transfer Agent. ln both
-                            these proposals, we have observed Idealake's Domain expertise and their
-                            proactive initiative taking abilities.</p>
-                        <div class="user">
-                            <div class="userinfo">
-                                <div class="userDetail">
-                                    <p class="username">Chandra Gupta</p>
-                                    <p class="userpos">CTO, Reliance Mutual Fund.</p>
-                                </div>
-                            </div>
-                            <div class="complogo"><img
-                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                    data-src="/content/dam/Idealake/images/clients/Reliance.png" alt="Reliance"
-                                    class="lazy"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="text">We cannot express our delight and the pleasure of working with
-                            the team at ldealake Information Technologies Pvt. Ltd for the last three
-                            years. ldealake came together with Axis Mutual Fund for Design, Development,
-                            and Online Transaction for Axis Mutual Fund EasyApp and EasySell platform
-                            for distributor-initiated transactions. These initiatives have been possible
-                            because our teams worked hand-in-hand to bring the ideas to life.</p>
-                        <div class="user">
-                            <div class="userinfo">
-                                <div class="userDetail">
-                                    <p class="username">Sahil Anand</p>
-                                    <p class="userpos">Assistant VP, Strategy &amp; Initiatives.</p>
-                                </div>
-                            </div>
-                            <div class="complogo"><img
-                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                    data-src="/content/dam/Idealake/images/clients/axismf.jpg" alt="AxisMF"
-                                    class="lazy"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="text">Working with Idealake Information Technologies Pvt. Ltd over the
-                            last three years. We never considered them just as a provider but more as a
-                            partner, whom we could depend on. Idealake and HDFC Mutual Fund worked side
-                            by side when it came to enhance our Mutual Fund website.</p>
-                        <p class="text">The application deployed consists of various interactive
-                            financial tools, planners, and information which assist the investor to make
-                            an informed decision and at the same time educates new investors about the
-                            Mutual Fund Industry.</p>
-                        <div class="user">
-                            <div class="userinfo">
-                                <div class="userDetail">
-                                    <p class="username">Sanjay S Kumble</p>
-                                    <p class="userpos">Assistant VP, Client Services.</p>
-                                </div>
-                            </div>
-                            <div class="complogo"><img
-                                    src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                    data-src="/content/dam/Idealake/images/clients/hdfc-mf.jpg" alt="hdfc"
-                                    class="lazy"></div>
-                        </div>
-                    </li>
+                    </sly>
                 </ul>
             </div>
         </div>
     </div>
 </section>
-</div>

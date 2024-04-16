@@ -1,7 +1,4 @@
 #base=css
-header.css
-global_new.css
 cardslider.css
+home_new.css
 swiper.css
-footer.css
-

@@ -780,7 +780,7 @@ html {
 }
 #contact-us-banner .sec-wrap:after {
   content: "";
-  background: url(../images/contactus_square_shape.png) no-repeat 0 0;
+  background: url(/content/dam/Idealake/images/contactus_square_shape.png) no-repeat 0 0;
   position: absolute;
   top: -16.5rem;
   right: -12.5rem;
