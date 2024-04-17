@@ -1,20 +1,10 @@
-<section class="ready-section">
-    <div class="container">
-        <div data-aos="fade-up" class="idea-container">
-            <h2 class="idea-h1">${properties.title}</h2>
-            <div class="ready-grid">
-                <div class="left-grid">
-                    <p class="idea-p">${properties.des}</p>
-                    <div class="btn-wrap"> <a href="${properties.ctaUrl}" class="idea-cta-card cta-2">
-                        <p>${properties.ctaName}</p><span class="icon-top-right-arrow"></span>
-                    </a>
-                    </div>
-                </div>
-                <div class="right-grid"><img
-                        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                        data-src="${properties.bannerImg}" alt="${properties.imgAlt}"
-                        class="img-fluid svg-image lazy"></div>
-            </div>
-        </div>
-    </div>
+<section data-sly-use.model="com.Idealake.core.models.BannerModel"
+         data-sly-use.bannerTemplate="template.html"
+         data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+    <sly data-sly-test.triggerType=${bannerTemplate[properties.type]} data-sly-call="${bannerTemplate[properties.type] @ model = model}"></sly>
+    <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+         data-sly-call="${clientlib.all @ categories='Idealake.Banner'}">
+    </sly>
 </section>
+
+

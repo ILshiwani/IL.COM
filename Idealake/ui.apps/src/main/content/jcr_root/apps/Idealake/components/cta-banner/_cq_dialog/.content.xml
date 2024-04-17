@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Award Slider"
+    jcr:title="CTA banner variation"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -11,46 +12,143 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <title
+                    <triggerType
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Title for Banner"
-                            name="./title"/>
-                    <des
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            granite:class="cq-dialog-dropdown-showhide"
+                            fieldLabel="Choose Banner Variation."
+                            name="./type">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-dialog-dropdown-showhide-target=".connect-layout-show-hide"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <homePage
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Home Page Banner"
+                                    value="homePage"/>
+                            <services
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Services Page Banner"
+                                    value="services"/>
+                        </items>
+                    </triggerType>
+
+                    <target-one-container
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                            fieldLabel="Description for Banner"
-                            name="./des"/>
-                    <bannerImg
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            granite:class="hide connect-layout-show-hide">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="homePage"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Title for Banner"
+                                    name="./title"/>
+                            <des
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                    fieldLabel="Description for Banner"
+                                    name="./des"/>
+                            <bannerImg
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                    autoStart="{Boolean}false"
+                                    class="cq-droptarget"
+                                    fieldLabel="Banner Background Image"
+                                    fileNameParameter="./fileName"
+                                    fileReferenceParameter="./bannerImg"
+                                    mimeTypes="[image]"
+                                    multiple="{Boolean}false"
+                                    name="./file"
+                                    title="Upload Banner Image Asset"
+                                    uploadUrl="${suffix.path}"
+                                    useHTML5="{Boolean}true"/>
+                            <imgAlt
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Image ALT"
+                                    name="./imgAlt"/>
+                            <ctaName
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="CTA Name"
+                                    name="./ctaName"/>
+                            <ctaUrl
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="CTA URL"
+                                    name="./ctaUrl"/>
+                        </items>
+
+                    </target-one-container>
+                    <target-two-container
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                            autoStart="{Boolean}false"
-                            class="cq-droptarget"
-                            fieldLabel="Card Image"
-                            fileNameParameter="./fileName"
-                            fileReferenceParameter="./bannerImg"
-                            mimeTypes="[image]"
-                            multiple="{Boolean}false"
-                            name="./file"
-                            title="Upload Banner Image Asset"
-                            uploadUrl="${suffix.path}"
-                            useHTML5="{Boolean}true"/>
-                    <imgAlt
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Image ALT"
-                            name="./imgAlt"/>
-                    <ctaName
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="CTA Name"
-                            name="./ctaName"/>
-                    <ctaUrl
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                            fieldLabel="CTA URL"
-                            name="./ctaUrl"/>
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            granite:class="hide connect-layout-show-hide">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="services"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <sertitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Title for Banner"
+                                    name="./sertitle"/>
+                            <serdes
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                    fieldLabel="Description for Banner"
+                                    name="./serdes"/>
+                            <serbannerImg
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                    autoStart="{Boolean}false"
+                                    class="cq-droptarget"
+                                    fieldLabel="Banner Background Image"
+                                    fileNameParameter="./fileName"
+                                    fileReferenceParameter="./serbannerImg"
+                                    mimeTypes="[image]"
+                                    multiple="{Boolean}false"
+                                    name="./file"
+                                    title="Upload Banner Image Asset"
+                                    uploadUrl="${suffix.path}"
+                                    useHTML5="{Boolean}true"/>
+                            <servectorImg
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                    autoStart="{Boolean}false"
+                                    class="cq-droptarget"
+                                    fieldLabel="Banner Vector Image"
+                                    fileNameParameter="./fileName"
+                                    fileReferenceParameter="./servectorImg"
+                                    mimeTypes="[image]"
+                                    multiple="{Boolean}false"
+                                    name="./file"
+                                    title="Upload Banner Image Asset"
+                                    uploadUrl="${suffix.path}"
+                                    useHTML5="{Boolean}true"/>
+                            <serimgAlt
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Image ALT"
+                                    name="./serimgAlt"/>
+                            <serctaName
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="CTA Name"
+                                    name="./serctaName"/>
+                            <serctaUrl
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="CTA URL"
+                                    name="./serctaUrl"/>
+                        </items>
+
+                    </target-two-container>
                 </items>
+
             </column>
         </items>
     </content>
