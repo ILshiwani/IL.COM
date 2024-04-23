@@ -35,17 +35,19 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                             composite="{Boolean}true"
-                            fieldLabel="Tab1"
-                            name="./tab1">
+                            fieldLabel="Tab1">
+
                         <field
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container"
-                                name="./products">
+                                name="./iconone">
                             <items jcr:primaryType="nt:unstructured">
                                 <column
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                     <items jcr:primaryType="nt:unstructured">
+
+
                 <iconType
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
@@ -114,17 +116,52 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                                 composite="{Boolean}true"
-                                                fieldLabel="Tab2"
-                                                name="./tab2">
+                                                fieldLabel="Tab2">
                                             <field
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/container"
-                                                    name="./productss">
+                                                    name="./icontwo">
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <column
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/container">
                                                         <items jcr:primaryType="nt:unstructured">
+                                                            <sideIcon
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                    fieldLabel="Choose Icon ."
+                                                                    name="./sideIcon">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <Vuejs
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Vuejs"
+                                                                            value="Vuejs"/>
+                                                                    <react
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="react"
+                                                                            value="react"/>
+                                                                    <selenium
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="selenium"
+                                                                            value="selenium"/>
+                                                                    <java
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="java"
+                                                                            value="java"/>
+                                                                    <figma
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="figma"
+                                                                            value="figma"/>
+                                                                    <html
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="html"
+                                                                            value="html"/>
+                                                                    <angular
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="angular"
+                                                                            value="angular"/>
+                                                                </items>
+                                                            </sideIcon>
                                                             <iconType
                                                                     jcr:primaryType="nt:unstructured"
                                                                     sling:resourceType="granite/ui/components/coral/foundation/form/select"
@@ -206,17 +243,52 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                             composite="{Boolean}true"
-                            fieldLabel="Tab3"
-                            name="./tab3">
+                            fieldLabel="Tab3">
                         <field
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container"
-                                name="./productsss">
+                                name="./iconthree">
                             <items jcr:primaryType="nt:unstructured">
                                 <column
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                     <items jcr:primaryType="nt:unstructured">
+                                        <sideIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Choose Icon ."
+                                                name="./icon2">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <Vuejs
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Vuejs"
+                                                        value="Vuejs"/>
+                                                <react
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="react"
+                                                        value="react"/>
+                                                <selenium
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="selenium"
+                                                        value="selenium"/>
+                                                <java
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="java"
+                                                        value="java"/>
+                                                <figma
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="figma"
+                                                        value="figma"/>
+                                                <html
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="html"
+                                                        value="html"/>
+                                                <angular
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="angular"
+                                                        value="angular"/>
+                                            </items>
+                                        </sideIcon>
                                         <iconType
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/select"

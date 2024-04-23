@@ -26,11 +26,11 @@ public class ServicesTabModel {
 
     @Inject
     @Optional
-    public Resource products;
+    public Resource iconone;
     @Inject
     @Optional
-    public Resource productss;
+    public Resource icontwo;
     @Inject
     @Optional
-    public Resource productsss;
+    public Resource iconthree;
 }
